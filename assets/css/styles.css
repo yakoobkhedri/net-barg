@@ -516,7 +516,9 @@ a {
 .z-10 {
     z-index: 10;
 }
-
+.z-20 {
+    z-index: 20;
+}
 .z-90 {
     z-index: 90;
 }
@@ -562,7 +564,7 @@ a {
 }
 
 .left-166 {
-    left: -166px;
+    left: -220px;
 }
 
 .bottom-45 {
@@ -718,13 +720,35 @@ input[type='number'],
 /* header */
 
 /* banner */
+.sidebar-list>li ul {
+    display: none;
+}
 .sidebar-list>li:hover ul {
-    display: block !important;
+    display: block;
 }
 
-@media only screen and (min-width:1200px) {}
+@media only screen and (max-width:1400px) {
+    .left-166 {
+        left: -190px;
+      }
+}
 
-@media only screen and (max-width:1200px) {}
+@media only screen and (max-width:1200px) {
+    .sidebar-list{
+        position: fixed!important;
+        top: 0;
+        bottom: 0;
+        right: -1200px;
+        transition: all .4s;
+        width: 290px!important;
+    }
+    .sidebar-list.active{
+        right: 0;
+    }
+    .sidebar-list ul{
+       display: none!important;
+    }
+}
 
 @media only screen and (max-width:992px) {}
 
