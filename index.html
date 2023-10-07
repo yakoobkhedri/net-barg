@@ -16,17 +16,22 @@
   <!-- header -->
 
   <header class="mb-4 d-flex flex-column">
+    <!-- ads -->
     <a class="order-1 order-lg-0 d-none d-md-block"><img alt="ads" src="assets/img/c8530e1e.jpg" class="img-fluid w-100"></a>
     <div class="container py-2 order-0 order-lg-1">
       <div class="d-flex align-items-center justify-content-between">
-        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-list cursor-pointer d-lg-none" viewBox="0 0 16 16">
+        <!-- ham icon -->
+        <svg id="hamIcon" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-list cursor-pointer d-lg-none" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
         </svg>
+        <!-- logo -->
          <a><img alt="logo" src="assets/img/netbarg.png" class="img-fluid"></a>
+         <!-- search -->
          <form class="rounded-pill bg-white d-lg-flex d-none align-items-center border px-2 py-1 max-w-500 mx-auto">
           <input class="bg-transparent w-100 outline-none border-0 px-3 py-1 fs-14" placeholder="جستجو (رستوران، مکان ورزشی، کالا، ...)">
           <input type="submit" class="bg-orange rounded-pill text-white fw-bold cursor-pointer border-0 py-1 px-5" value="جستجو">
          </form>
+         <!-- map -->
          <a class="d-lg-flex d-none align-items-center rounded-pill overflow-hidden position-relative w-178 h-41">
           <p class="mb-0 fs-12 text-dark position-absolute pe-2">
             نت‌برگ‌های روی نقشه
@@ -34,12 +39,14 @@
             <img alt="map" src="assets/img/netbarghaye-roye-naghshe.svg" aria-label="img-fluid">
          </a>
          <div class="d-lg-none d-flex align-items-center gap-2">
+          <!-- cart -->
           <a class="d-flex align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart-dash-fill text-gray" viewBox="0 0 16 16">
               <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1z"/>
             </svg>
             <p class="mb-0 bg-green rounded-circle w-20 h-20 position-relative left-36 top-9 text-white fw-bold d-flex align-items-center justify-content-center cursor-pointer">0</p>
           </a>
+          <!-- search -->
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search text-gray cursor-pointer" viewBox="0 0 16 16">
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
           </svg>
@@ -50,11 +57,13 @@
        <div class="container">
          <div class="d-flex align-items-center justify-content-between">
            <div class="d-flex align-items-center">
+            <!-- home icon -->
              <a class="d-none d-lg-block text-white ps-5">
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-house-door-fill text-gray" viewBox="0 0 16 16">
                 <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
               </svg>
              </a>
+             <!-- city -->
              <select class="bg-transparent border-0 py-3 text-gray px-lg-4">
               <option class="text-dark">ارومیه</option>
               <option class="text-dark">تهران</option>
@@ -67,12 +76,14 @@
              </select>
            </div>
            <div class="d-lg-flex d-none align-items-center gap-4">
+            <!-- cart -->
             <a class="d-flex align-items-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart-dash-fill text-gray" viewBox="0 0 16 16">
                 <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1z"/>
               </svg>
               <p class="mb-0 bg-green rounded-circle w-31 h-31 text-white fw-bold d-flex align-items-center justify-content-center cursor-pointer">0</p>
             </a>
+            <!-- login -->
             <a class="d-flex align-items-center text-gray gap-2 border-end border-start px-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-key rotate-130" viewBox="0 0 16 16">
                 <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
@@ -80,6 +91,7 @@
               </svg>
               <p class="mb-0 text-gray">ورود</p>
             </a>
+            <!-- register -->
             <a class="d-flex align-items-center text-gray gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
                 <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
@@ -102,7 +114,7 @@
         <div class="row g-4">
           <div class="col-xl-2 px-0">
             <div class="h-100">
-              <ul class="list-unstyled p-0 mb-0 position-relative h-100 z-10 active bg-white sidebar-list">
+              <ul id="mobileMenu" class="list-unstyled p-0 mb-0 position-relative h-100 z-10 bg-white sidebar-list">
                 <li class="bg-black py-3 d-xl-none">
                   <div class="d-flex align-items-center justify-content-center gap-4">
                     <a class="d-flex align-items-center text-gray gap-2 border-start ps-4">

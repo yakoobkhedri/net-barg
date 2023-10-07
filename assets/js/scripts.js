@@ -1,3 +1,12 @@
+// mobile menu
+
+let mobileMenu=document.getElementById('mobileMenu');
+let hamIcon=document.getElementById('hamIcon');
+
+hamIcon.addEventListener('click',function () {
+    mobileMenu.classList.toggle('active');
+})
+
 // swiper
 var banner = new Swiper(".banner", {
     loop: true,
