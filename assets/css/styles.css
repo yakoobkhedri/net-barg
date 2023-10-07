@@ -74,7 +74,7 @@ body.pannel {
 }
 
 .bg-gray3 {
-    background-color: #fafafb;
+    background-color: #dfdfdf;
 }
 
 .bg-sky {
@@ -209,7 +209,9 @@ a {
 .cursor-pointer {
     cursor: pointer;
 }
-
+.text-justify{
+    text-align: justify;
+}
 .mt-106 {
     margin-top: 106px;
 }
