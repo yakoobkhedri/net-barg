@@ -79,7 +79,9 @@ body.pannel {
 .bg-gray3 {
     background-color: #dfdfdf;
 }
-
+.bg-green{
+    background-color: #4ec51c;
+}
 .bg-sky {
     background-color: #caf1f8;
 }
@@ -318,7 +320,9 @@ a {
 .w-28 {
     width: 7rem;
 }
-
+.w-31 {
+    width: 31px;
+}
 .w-32 {
     width: 8rem;
 }
@@ -582,7 +586,9 @@ a {
 .rotate-180 {
     transform: rotate(180deg);
 }
-
+.rotate-130 {
+    transform: rotate(130deg);
+}
 .rotate-67 {
     transform: rotate(67deg);
 }
