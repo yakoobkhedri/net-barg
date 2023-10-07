@@ -66,11 +66,11 @@ body.pannel {
     color: orangered;
 }
 .bg-gray {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 .bg-gray2 {
-    background: linear-gradient(rgba(110, 112, 9, 0) 0%, rgba(110, 112, 9, 0.07) 100%);
+    background-color: #f5f5f5;
 }
 
 .bg-gray3 {
@@ -95,12 +95,8 @@ body.pannel {
     background-color: #26EC15;
 }
 
-.bg-gray2 {
-    background-color: #9EA7AA;
-}
-
 .bg-orange {
-    background-color: #D6906A;
+    background-color: orangered;
 }
 
 .bg-brown {
@@ -445,7 +441,10 @@ a {
 .h-574 {
     height: 574px;
 }
-
+.max-w-500{
+    max-width: 500px;
+    width: 100%;
+}
 .mr-66 {
     margin-right: 66px;
 }
@@ -627,7 +626,9 @@ a {
 .opacity-none {
     opacity: 0;
 }
-
+.outline-none{
+    outline: none;
+}
 
 input[type='email'],
 input[type='number'],
