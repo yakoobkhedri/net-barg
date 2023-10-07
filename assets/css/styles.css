@@ -65,6 +65,9 @@ body.pannel {
 .text-orange{
     color: orangered;
 }
+.bg-black{
+    background-color: #3c3c3c;
+}
 .bg-gray {
     background-color: #ffffff;
 }
