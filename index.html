@@ -13,6 +13,27 @@
 
 <body>
 
+  <!-- search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div
+          class="d-flex cursor rounded-3 w-100 h-37 py-1 px-2 border align-items-center justify-content-between gap-2">
+          <input type="search" placeholder="جستجو..." class="form-control bg-transparent border-0 focus-none">
+          <div class="position-relative cursor">
+            <input type="submit"
+              class="position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0 opacity-none z-10 cursor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search text-gray cursor-pointer" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+              </svg>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- header -->
 
   <header class="mb-4 d-flex flex-column">
@@ -47,7 +68,7 @@
             <p class="mb-0 bg-green rounded-circle w-20 h-20 position-relative left-36 top-9 text-white fw-bold d-flex align-items-center justify-content-center cursor-pointer">0</p>
           </a>
           <!-- search -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search text-gray cursor-pointer" viewBox="0 0 16 16">
+          <svg data-bs-toggle="modal" data-bs-target="#searchModal" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search text-gray cursor-pointer" viewBox="0 0 16 16">
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
           </svg>
          </div>
