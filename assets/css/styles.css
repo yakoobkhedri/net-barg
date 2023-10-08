@@ -188,7 +188,10 @@ body.pannel {
 .orange-hover:hover,.orange-hover:hover p{
     color: #f44336;
 }
-.red-border-hover::after{
+.red-border-hover::after,.green-border-hover::after,.brown-border-hover::after,
+.purple-border-hover::after,.pink-border-hover::after,.blue-border-hover::after,
+.info-border-hover::after
+{
     content: '';
     position: absolute;
     height: 1px;
@@ -198,19 +201,72 @@ body.pannel {
     transition: all .4s;
     background-color: #f44336;
 }
-.red-border-hover:hover:after{
+.red-border-hover:hover:after,.green-border-hover:hover:after,.brown-border-hover:hover:after,
+.purple-border-hover:hover:after,.pink-border-hover:hover:after,.blue-border-hover:hover:after,
+.info-border-hover:hover:after
+{
     width: 100%;
 }
-.red-border-hover:hover{
+.red-border-hover:hover svg,.green-border-hover:hover svg,.brown-border-hover:hover svg,
+.purple-border-hover:hover svg,.pink-border-hover:hover svg,.blue-border-hover:hover svg,
+.info-border-hover:hover svg
+{
+    transform: translateX(-7px);
+}
+.red-border-hover:hover,.green-border-hover:hover,.brown-border-hover:hover,.purple-border-hover:hover,.pink-border-hover:hover,
+.blue-border-hover:hover,.info-border-hover:hover
+{
     background-color: rgb(243, 242, 242);
 }
 .red-border-hover:hover > a p,.red-border-hover:hover svg{
     color: #f44336!important;
     stroke: #f44336;
 }
-.red-border-hover:hover svg{
-    transform: translateX(-7px);
+.green-border-hover::after{
+   background-color: #37c447;
 }
+.green-border-hover:hover > a p,.green-border-hover:hover svg{
+    color: #37c447!important;
+    stroke: #37c447;
+}
+.brown-border-hover::after{
+    background-color: #8d6e63;
+ }
+ .brown-border-hover:hover > a p,.brown-border-hover:hover svg,.brown-border-hover:hover path{
+     color: #8d6e63!important;
+     stroke: #8d6e63;
+ }
+ .purple-border-hover::after{
+    background-color: #ba68c8;
+ }
+ .purple-border-hover:hover > a p,.purple-border-hover:hover svg,.purple-border-hover:hover path,.purple-border-hover:hover circle{
+     color: #ba68c8!important;
+     stroke: #ba68c8;
+ }
+ .pink-border-hover::after{
+    background-color: #ec407a;
+ }
+ .pink-border-hover:hover > a p,.pink-border-hover:hover svg,.pink-border-hover:hover path,.pink-border-hover:hover circle{
+     color: #ec407a!important;
+     stroke: #ec407a;
+     fill: #ec407a;
+ }
+ .blue-border-hover::after{
+    background-color: #00c0f0;
+ }
+ .blue-border-hover:hover > a p,.blue-border-hover:hover svg,.blue-border-hover:hover path,.blue-border-hover:hover circle{
+     color: #00c0f0!important;
+     stroke: #00c0f0;
+     fill: #00c0f0;
+ }
+ .info-border-hover::after{
+    background-color: #009688;
+ }
+ .info-border-hover:hover > a p,.info-border-hover:hover svg,.info-border-hover:hover path,.info-border-hover:hover circle{
+     color: #009688!important;
+     stroke: #009688;
+     fill: #009688;
+ }
 a {
     cursor: pointer;
     text-decoration: none;
