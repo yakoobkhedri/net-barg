@@ -827,6 +827,7 @@ input[type='number'],
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #offer .col-xl-3:hover,.main-hover:hover{
     transform: translateY(-6px);
@@ -868,7 +869,7 @@ input[type='number'],
 .sidebar-list>li:hover ul {
     display: block;
 }
-.sidebar-list li ul li:hover p {
+.sidebar-list li ul li:hover p,footer ul li:hover a {
     color: blue!important;
 }
 @media only screen and (max-width:1400px) {
@@ -899,6 +900,9 @@ input[type='number'],
 @media only screen and (max-width:768px) {
     .swiper.banner img.rounded-4{
         border-radius: 0;
+    }
+    .bg-app{
+        background-image: url('../img/app-banner-320.jpg');
     }
 }
 
