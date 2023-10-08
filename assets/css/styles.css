@@ -828,30 +828,35 @@ input[type='number'],
     background-position: center;
     background-repeat: no-repeat;
 }
-.col-xl-3:hover{
+#offer .col-xl-3:hover,.main-hover:hover{
     transform: translateY(-6px);
  }
-.col-xl-3 div.position-relative{
+.col-xl-3 div.position-relative,.main-hover div.position-relative{
    overflow: hidden;
 }
-.col-xl-3 div.position-relative p{
+.col-xl-3 div.position-relative p,.main-hover div.position-relative p{
    z-index: 8;
 }
-.col-xl-3 div.position-relative a{
+.col-xl-3 div.position-relative a,.main-hover div.position-relative a{
     opacity: 0;
     margin-bottom: 0!important;
  }
- .col-xl-3:hover div.position-relative a{
+ .col-xl-3:hover div.position-relative a,.main-hover:hover div.position-relative a{
     opacity: 100%;
     margin-bottom: 18px!important;
  }
-.col-xl-3 div.position-relative img,.col-xl-3:hover div.position-relative + div > div:first-child a p{
+.col-xl-3 div.position-relative img,.col-xl-3:hover div.position-relative + div > div:first-child a p,
+.main-hover div.position-relative img,.main-hover:hover div.position-relative + div > div:first-child a p,
+.text-hover:hover div.position-relative + div > div:first-child a p
+{
     transition: all .4s;
 }
-.col-xl-3:hover div.position-relative img{
+.col-xl-3:hover div.position-relative img,.main-hover:hover div.position-relative img{
     transform: scale(1.1);
 }
-.col-xl-3:hover div.position-relative + div > div:first-child a p{
+.col-xl-3:hover div.position-relative + div > div:first-child a p,.main-hover:hover div.position-relative + div > div:first-child a p,
+.text-hover:hover div.position-relative + div > div:first-child a p
+{
    color: rgb(1, 154, 1)!important;
  }
 /* header */
