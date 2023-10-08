@@ -279,7 +279,8 @@ body.pannel {
     background-color: lightgray;
  }
  .gray-border-hover:hover > a p,.gray-border-hover:hover svg,.gray-border-hover:hover path,.gray-border-hover:hover circle{
-     fill: lightgray;
+     fill: rgb(183, 183, 183);
+     color: rgb(183, 183, 183)!important;
  }
 a {
     cursor: pointer;
@@ -751,13 +752,13 @@ a {
     opacity: 0;
 }
 #overlay{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.644);
     opacity: 0;
     z-index: -3;
     transition: all .4s;
 }
 #overlay.active{
-    opacity: .6;
+    opacity: 100%;
     z-index: 3;
 }
 input[type='email'],
