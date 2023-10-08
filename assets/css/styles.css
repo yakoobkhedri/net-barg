@@ -190,7 +190,7 @@ body.pannel {
 }
 .red-border-hover::after,.green-border-hover::after,.brown-border-hover::after,
 .purple-border-hover::after,.pink-border-hover::after,.blue-border-hover::after,
-.info-border-hover::after
+.info-border-hover::after,.purple2-border-hover::after,.gray-border-hover::after
 {
     content: '';
     position: absolute;
@@ -203,18 +203,18 @@ body.pannel {
 }
 .red-border-hover:hover:after,.green-border-hover:hover:after,.brown-border-hover:hover:after,
 .purple-border-hover:hover:after,.pink-border-hover:hover:after,.blue-border-hover:hover:after,
-.info-border-hover:hover:after
+.info-border-hover:hover:after,.purple2-border-hover:hover:after,.gray-border-hover:hover:after
 {
     width: 100%;
 }
 .red-border-hover:hover svg,.green-border-hover:hover svg,.brown-border-hover:hover svg,
 .purple-border-hover:hover svg,.pink-border-hover:hover svg,.blue-border-hover:hover svg,
-.info-border-hover:hover svg
+.info-border-hover:hover svg,.purple2-border-hover:hover svg,.gray-border-hover:hover svg
 {
     transform: translateX(-7px);
 }
 .red-border-hover:hover,.green-border-hover:hover,.brown-border-hover:hover,.purple-border-hover:hover,.pink-border-hover:hover,
-.blue-border-hover:hover,.info-border-hover:hover
+.blue-border-hover:hover,.info-border-hover:hover,.purple2-border-hover:hover,.gray-border-hover:hover
 {
     background-color: rgb(243, 242, 242);
 }
@@ -266,6 +266,20 @@ body.pannel {
      color: #009688!important;
      stroke: #009688;
      fill: #009688;
+ }
+ .purple2-border-hover::after{
+    background-color: #5652F7;
+ }
+ .purple2-border-hover:hover > a p,.purple2-border-hover:hover svg,.purple2-border-hover:hover path,.purple2-border-hover:hover circle{
+     color: #5652F7!important;
+     stroke: #5652F7;
+     fill: #5652F7;
+ }
+ .gray-border-hover::after{
+    background-color: lightgray;
+ }
+ .gray-border-hover:hover > a p,.gray-border-hover:hover svg,.gray-border-hover:hover path,.gray-border-hover:hover circle{
+     fill: lightgray;
  }
 a {
     cursor: pointer;
@@ -814,6 +828,32 @@ input[type='number'],
     background-position: center;
     background-repeat: no-repeat;
 }
+.col-xl-3:hover{
+    transform: translateY(-6px);
+ }
+.col-xl-3 div.position-relative{
+   overflow: hidden;
+}
+.col-xl-3 div.position-relative p{
+   z-index: 8;
+}
+.col-xl-3 div.position-relative a{
+    opacity: 0;
+    margin-bottom: 0!important;
+ }
+ .col-xl-3:hover div.position-relative a{
+    opacity: 100%;
+    margin-bottom: 18px!important;
+ }
+.col-xl-3 div.position-relative img,.col-xl-3:hover div.position-relative + div > div:first-child a p{
+    transition: all .4s;
+}
+.col-xl-3:hover div.position-relative img{
+    transform: scale(1.1);
+}
+.col-xl-3:hover div.position-relative + div > div:first-child a p{
+   color: rgb(1, 154, 1)!important;
+ }
 /* header */
 
 /* banner */
@@ -823,7 +863,9 @@ input[type='number'],
 .sidebar-list>li:hover ul {
     display: block;
 }
-
+.sidebar-list li ul li:hover p {
+    color: blue!important;
+}
 @media only screen and (max-width:1400px) {
     .left-166 {
         left: -190px;
