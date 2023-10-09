@@ -16,6 +16,7 @@ overlay.addEventListener('click',function () {
 // swiper
 var banner = new Swiper(".banner", {
     loop: true,
+    autoplay:true,
     slidesPerView: 1,
     spaceBetween: 0,
     navigation: {
