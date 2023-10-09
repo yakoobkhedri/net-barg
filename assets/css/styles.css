@@ -182,11 +182,12 @@ body.pannel {
 .underline.border-b-blue::after{
     background-color: #009688;
 }
-.green-hover:hover,.green-hover:hover p{
-    color: #37c447;
+.green-hover:hover,.green-hover:hover p,.green-hover:hover svg,.green-hover:hover path{
+    color: #37c447!important;
+    fill: #37c447!important;
 }
 .orange-hover:hover,.orange-hover:hover p{
-    color: #f44336;
+    color: #f44336!important;
 }
 .red-border-hover::after,.green-border-hover::after,.brown-border-hover::after,
 .purple-border-hover::after,.pink-border-hover::after,.blue-border-hover::after,
@@ -218,69 +219,69 @@ body.pannel {
 {
     background-color: rgb(243, 242, 242);
 }
-.red-border-hover:hover > a p,.red-border-hover:hover svg{
+.red-border-hover.item:hover > a p,.red-border-hover.item:hover svg,.red-border-hover.item:hover path{
     color: #f44336!important;
-    stroke: #f44336;
+    stroke: #f44336!important;
 }
 .green-border-hover::after{
    background-color: #37c447;
 }
-.green-border-hover:hover > a p,.green-border-hover:hover svg{
+.green-border-hover.item:hover > a p,.green-border-hover.item:hover svg,.green-border-hover.item:hover path{
     color: #37c447!important;
-    stroke: #37c447;
+    stroke: #37c447!important;
 }
 .brown-border-hover::after{
     background-color: #8d6e63;
  }
- .brown-border-hover:hover > a p,.brown-border-hover:hover svg,.brown-border-hover:hover path{
+ .brown-border-hover.item:hover > a p,.brown-border-hover.item:hover svg,.brown-border-hover.item:hover path{
      color: #8d6e63!important;
-     stroke: #8d6e63;
+     stroke: #8d6e63!important;
  }
  .purple-border-hover::after{
     background-color: #ba68c8;
  }
- .purple-border-hover:hover > a p,.purple-border-hover:hover svg,.purple-border-hover:hover path,.purple-border-hover:hover circle{
+ .purple-border-hover.item:hover > a p,.purple-border-hover.item:hover svg,.purple-border-hover.item:hover path,.purple-border-hover.item:hover circle{
      color: #ba68c8!important;
-     stroke: #ba68c8;
+     stroke: #ba68c8!important;
  }
  .pink-border-hover::after{
     background-color: #ec407a;
  }
  .pink-border-hover:hover > a p,.pink-border-hover:hover svg,.pink-border-hover:hover path,.pink-border-hover:hover circle{
      color: #ec407a!important;
-     stroke: #ec407a;
-     fill: #ec407a;
+     stroke: #ec407a!important;
+     fill: #ec407a!important;
  }
  .blue-border-hover::after{
     background-color: #00c0f0;
  }
  .blue-border-hover:hover > a p,.blue-border-hover:hover svg,.blue-border-hover:hover path,.blue-border-hover:hover circle{
      color: #00c0f0!important;
-     stroke: #00c0f0;
-     fill: #00c0f0;
+     stroke: #00c0f0!important;
+     fill: #00c0f0!important;
  }
  .info-border-hover::after{
     background-color: #009688;
  }
  .info-border-hover:hover > a p,.info-border-hover:hover svg,.info-border-hover:hover path,.info-border-hover:hover circle{
      color: #009688!important;
-     stroke: #009688;
-     fill: #009688;
+     stroke: #009688!important;
+     fill: #009688!important;
  }
  .purple2-border-hover::after{
     background-color: #5652F7;
  }
  .purple2-border-hover:hover > a p,.purple2-border-hover:hover svg,.purple2-border-hover:hover path,.purple2-border-hover:hover circle{
      color: #5652F7!important;
-     stroke: #5652F7;
-     fill: #5652F7;
+     stroke: #5652F7!important;
+     fill: #5652F7!important;
  }
  .gray-border-hover::after{
-    background-color: lightgray;
+    background-color: black;
  }
  .gray-border-hover:hover > a p,.gray-border-hover:hover svg,.gray-border-hover:hover path,.gray-border-hover:hover circle{
-     fill: rgb(183, 183, 183);
-     color: rgb(183, 183, 183)!important;
+     fill: black!important;
+     color: black!important;
  }
 a {
     cursor: pointer;
@@ -830,9 +831,6 @@ input[type='number'],
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#offer .col-xl-3:hover,.main-hover:hover{
-    transform: translateY(-6px);
- }
 .col-xl-3 div.position-relative,.main-hover div.position-relative{
    overflow: hidden;
 }
@@ -864,6 +862,14 @@ input[type='number'],
 /* header */
 
 /* banner */
+.sidebar-list .item svg,.sidebar-list .item path,.sidebar-list .item circle,.sidebar-list .item rect{
+    color: gray!important;
+    stroke: gray!important;
+}
+.sidebar-list .pink-border-hover svg,.info-border-hover svg,.blue-border-hover svg,.purple2-border-hover svg{
+    color: gray!important;
+    fill: gray!important;
+}
 .sidebar-list>li ul {
     display: none;
 }

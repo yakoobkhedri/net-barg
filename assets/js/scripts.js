@@ -23,3 +23,6 @@ var banner = new Swiper(".banner", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// aos
+AOS.init();
