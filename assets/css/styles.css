@@ -70,6 +70,12 @@ body.pannel {
 .text-orange{
     color: orangered;
 }
+.text-red{
+    color: #f44336;
+}
+.text-purple{
+    color: #800080;
+}
 .bg-black{
     background-color: #3c3c3c;
 }
