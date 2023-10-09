@@ -138,7 +138,7 @@
     <!-- about -->
     <section class="mb-4">
       <div class="container">
-        <div class="row border bg-white">
+        <div class="row border bg-white position-relative pb-4">
           <div class="col-xl-2 px-0 d-xl-none">
             <div class="h-100">
               <ul id="mobileMenu" class="list-unstyled p-0 mb-0 position-relative h-100 z-10 bg-white sidebar-list">
@@ -567,9 +567,53 @@
             </div>
           </div>
           <div class="h-350 w-100 position-relative">
-            <img alt="contact" src="assets/img/cu-top.png" class="img-fluid position-absolute top-0 end-0">
-              <h4 class="text-white fw-bold z-10 position-relative m-4">ارتباط با ما</h4>
+            <img data-aos="fade-right" alt="contact" src="assets/img/cu-top.png" class="img-fluid position-absolute top-0 end-0">
+              <h4 data-aos="fade-up" class="text-white fw-bold z-10 position-relative m-4">ارتباط با ما</h4>
           </div>
+          <div class="row g-4 z-10">
+            <form class="col-lg-6" data-aos="fade-left">
+              <div class="d-flex align-items-center gap-2 underline border-b-blue pb-2 mx-4">
+                <p class="mb-0 text-blue fs-18"> فرم تماس </p>
+              </div>
+              <div class="d-flex flex-column flex-md-row mb-3 align-items-center justify-content-between gap-3 mt-4">
+                <div class="form-floating flex-grow-1 w-100">
+                  <input type="email" class="form-control h-41 rounded-pill" id="floatingInput" placeholder="">
+                  <label class="end-0 py-2" for="floatingInput">نام<span class="text-danger fw-bold">*</span></label>
+                </div>
+                <div class="form-floating flex-grow-1 w-100">
+                  <input type="email" class="form-control h-41 rounded-pill" id="floatingInput2" placeholder="">
+                  <label class="end-0 py-2" for="floatingInput2">نام خانوادگی<span class="text-danger fw-bold">*</span></label>
+                </div>
+              </div>
+              <div class="form-floating flex-grow-1 mb-3">
+                <input type="email" class="form-control h-41 rounded-pill" id="floatingInput3" placeholder="">
+                <label class="end-0 py-2" for="floatingInput3">ایمیل<span class="text-danger fw-bold">*</span></label>
+              </div>
+              <div class="form-floating flex-grow-1 mb-3">
+                <input type="email" class="form-control h-41 rounded-pill" id="floatingInput4" placeholder="">
+                <label class="end-0 py-2" for="floatingInput4">موبایل<span class="text-danger fw-bold">*</span></label>
+              </div>
+              <select class="rounded-pill bg-transparent flex-grow-1 mb-3 border w-100 py-2">
+                <option>پشتیبانی از مشتریان</option>
+                <option>فنی</option>
+              </select>
+              <div class="form-floating flex-grow-1 mb-5">
+                <textarea rows="6" class="form-control rounded-4" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label class="end-0 py-2" for="floatingTextarea">پیام شما<span class="text-danger fw-bold">*</span></label>
+              </div>
+              <input type="submit" class="rounded-pill me-auto d-table bg-success2 text-white fw-bold px-5 py-2 border-0" value="ارسال">
+            </form>
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="d-flex align-items-center gap-2 underline border-b-blue pb-2">
+                <p class="mb-0 text-blue fs-18"> راه های ارتباطی دیگر </p>
+              </div>
+              <p class="text-secondary fs-14 mt-4 fw-bold">آدرس شرکت : شهرک غرب - بلوار دادمان - انتهای خیابان سپهر غربی - خیابان گلبرگ سوم - کوچه گلستان دوم - پلاک ۱۰۰</p>
+              <a class="text-gray my-4 d-block">تماس با پشتیبانی : 42024 (021)</a>
+              <a class="text-gray">تماس با شرکت : ۸۸۵۷۵۱۶۰ (021)</a>
+            </div>
+          </div>
+          <!--  -->
+          <img data-aos="fade-down" alt="contact" src="assets/img/cu-bottom.png" class="position-absolute bottom-0 start-0 w-50 d-none d-md-block">
         </div>
       </div>
     </section>

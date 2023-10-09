@@ -61,7 +61,9 @@ body.pannel {
     color: #053B50;
     opacity: 60%;
 }
-
+.text-blue{
+    color: #009688;
+}
 .second-bg {
     background-color: #053B50;
 }
@@ -444,7 +446,7 @@ a {
 }
 
 .h-41 {
-    height: 41px;
+    height: 41px!important;
 }
 
 .h-46 {
@@ -456,7 +458,7 @@ a {
 }
 
 .w-41 {
-    width: 41px;
+    width: 41px!important;
 }
 
 .h-58 {
@@ -763,7 +765,7 @@ a {
 }
 #overlay.active{
     opacity: 100%;
-    z-index: 3;
+    z-index: 12;
 }
 input[type='email'],
 input[type='number'],
@@ -896,6 +898,7 @@ input[type='number'],
         right: -1200px;
         transition: all .4s;
         width: 290px!important;
+        z-index: 13;
     }
     .sidebar-list.active{
         right: 0;
