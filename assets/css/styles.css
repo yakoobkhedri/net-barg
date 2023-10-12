@@ -110,7 +110,9 @@ body.pannel {
 .bg-success2 {
     background-color: #26EC15;
 }
-
+.border-l-success2{
+    border-left: 2px solid #26EC15;
+}
 .bg-orange {
     background-color: orangered;
 }
@@ -926,6 +928,12 @@ input[type='number'],
 
 .smallImgs .swiper-slide-thumb-active {
     opacity: 1;
+}
+.bg-map{
+    background-image: url('../img/map-desktop.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 @media only screen and (max-width:1400px) {
     .left-166 {
