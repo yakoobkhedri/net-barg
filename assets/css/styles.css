@@ -781,10 +781,28 @@ input[type='number'],
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    font-size: 26px;
-    color: orange;
+    font-size: 17px;
+    color: #353535;
+    font-weight: bold;
 }
-
+.swiper-button-next,.swiper-button-prev{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background: none;
+    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #3c3c3c;
+  top: 50%;
+  margin: -21px 20px 0 20px;
+  text-align: center;
+  opacity: .8;
+  z-index: 3;
+}
 .accordion-header,
 .accordion-item .accordion-button {
     border-radius: 10px !important;
@@ -889,6 +907,25 @@ input[type='number'],
 }
 .sidebar-list li ul li:hover p,footer ul li:hover a {
     color: blue!important;
+}
+/* single page */
+.gallery img {
+    width: 100%;
+}
+
+.smallImgs img {
+    height: 55px;
+    width: 100%;
+}
+
+.smallImgs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.smallImgs .swiper-slide-thumb-active {
+    opacity: 1;
 }
 @media only screen and (max-width:1400px) {
     .left-166 {

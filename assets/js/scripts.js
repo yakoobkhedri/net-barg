@@ -24,6 +24,21 @@ var banner = new Swiper(".banner", {
         prevEl: ".swiper-button-prev",
     },
 });
-
+var swiper = new Swiper(".smallImgs", {
+    spaceBetween: 10,
+    slidesPerView: 7,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".gallery", {
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
 // aos
 AOS.init();
