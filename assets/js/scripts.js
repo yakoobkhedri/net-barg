@@ -26,9 +26,23 @@ var banner = new Swiper(".banner", {
 });
 var swiper = new Swiper(".smallImgs", {
     spaceBetween: 10,
-    slidesPerView: 7,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints:{
+        1200:{
+            slidesPerView: 7,
+        },
+        768:{
+            slidesPerView: 4,
+        },
+        576:{
+            slidesPerView: 3,
+        },
+        400:{
+            slidesPerView: 3,
+        },
+    }
 });
 var swiper2 = new Swiper(".gallery", {
     spaceBetween: 0,
