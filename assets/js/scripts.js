@@ -57,12 +57,27 @@ var swiper2 = new Swiper(".gallery", {
 var tabs = new Swiper(".tabs", {
     loop: true,
     autoplay:true,
-    slidesPerView: 7,
+    slidesPerView: 2,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints:{
+        1200:{
+            slidesPerView: 7,
+        },
+        992:{
+            slidesPerView: 5,
+        },
+        576:{
+            slidesPerView: 4,
+        },
+        400:{
+            slidesPerView: 2,
+            spaceBetween:2
+        },
+    }
 });
 // aos
 AOS.init();
