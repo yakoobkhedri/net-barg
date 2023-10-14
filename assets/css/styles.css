@@ -331,6 +331,9 @@ a {
 .rounded-left {
     border-radius: 22px 0 0 22px;
 }
+.rounded-right {
+    border-radius: 0 22px 22px 0;
+}
 .cursor-pointer {
     cursor: pointer;
 }
