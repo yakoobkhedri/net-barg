@@ -474,7 +474,12 @@ a {
 .w-41 {
     width: 41px!important;
 }
-
+.w-48 {
+    width: 48px;
+}
+.h-48 {
+    height: 48px;
+}
 .h-58 {
     height: 58px;
 }
