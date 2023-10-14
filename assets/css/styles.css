@@ -961,6 +961,14 @@ input[type='number'],
     background-position: left;
     background-repeat: no-repeat;
 }
+.tick {
+    width: 159px;
+    text-align: center;
+    direction: ltr;
+  }
+  .tick .tick-credits {
+   display: none;
+  }
 @media only screen and (max-width:1400px) {
     .left-166 {
         left: -190px;

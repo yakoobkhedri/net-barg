@@ -9,6 +9,7 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <link rel="stylesheet" href="assets/css/flip.min.css">
   <title>جزئیات</title>
 </head>
 
@@ -795,7 +796,17 @@
                   زمان باقیمانده
                 </p>
               </div>
-              <div class="text-danger rounded-pill fw-bold px-3 py-1 border-danger border fs-12">جدید</div>
+              <div class="tick" data-did-init="handleTickInit">
+                <div data-layout="horizontal fit">
+                  <span data-key="day" data-transform="pad(00)" data-view="flip"></span>
+                  <span data-view="text" data-key="sep" class="tick-text-inline"></span>
+                    <span data-key="hours" data-transform="pad(00)" data-view="flip"></span>
+                    <span data-view="text" data-key="sep" class="tick-text-inline"></span>
+                    <span data-key="minutes" data-transform="pad(00)" data-view="flip"></span>
+                    <span data-view="text" data-key="sep" class="tick-text-inline"></span>
+                    <span data-key="seconds" data-transform="pad(00)" data-view="flip"></span>
+                </div>
+            </div>
             </div>
             <div class="d-flex align-items-center justify-content-between px-2 py-4">
               <div class="d-flex gap-2 align-items-center">
@@ -2923,8 +2934,23 @@
   <script src="assets/js/aos.js"></script>
   <!-- Swiper JS -->
   <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/flip.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function handleTickInit(tick) {
+    Tick.helper.interval(function(){
+    var d = Tick.helper.date();
+    tick.value = {
+        sep: ':',
+        day: d.getDay(),
+        hours: d.getHours(),
+        minutes: d.getMinutes(),
+        seconds: d.getSeconds()
+    };
+});
+}
+  </script>
 </body>
 
 </html>
