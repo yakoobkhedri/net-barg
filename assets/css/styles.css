@@ -68,7 +68,7 @@ body.pannel {
     background-color: #053B50;
 }
 .text-orange{
-    color: orangered;
+    color: #fe5010;
 }
 .text-red{
     color: #f44336;
@@ -114,7 +114,7 @@ body.pannel {
     border-left: 2px solid #26EC15;
 }
 .bg-orange {
-    background-color: orangered;
+    background-color: #fe5010;
 }
 
 .bg-brown {
@@ -158,6 +158,9 @@ body.pannel {
 .border-b-blue{
     border-bottom: 1px solid #009688;
 }
+.border-b-orange{
+    border-bottom: 1px solid #fe5010;
+}
 .transition {
     transition: all .4s;
 }
@@ -192,6 +195,9 @@ body.pannel {
 }
 .underline.border-b-blue::after{
     background-color: #009688;
+}
+.underline.border-b-orange::after{
+    background-color: #fe5010;
 }
 .green-hover:hover,.green-hover:hover p,.green-hover:hover svg,.green-hover:hover path{
     color: #37c447!important;
@@ -780,7 +786,19 @@ input[type='number'],
 .iti--allow-dropdown input {
     text-align: left;
 }
-
+.swiper.tabs .swiper-slide div:hover,.swiper.tabs .swiper-slide.active div{
+    background-color: #f44336;
+    color: white!important;
+    border: 1px solid transparent!important;
+}
+.tabSwiper .swiper-button-next {
+  left: -22px!important;
+  right: auto;
+}
+.tabSwiper .swiper-button-prev {
+    right: -22px!important;
+    left: auto;
+  }
 .swiper-button-next::after,
 .swiper-button-prev::after {
     font-size: 17px;

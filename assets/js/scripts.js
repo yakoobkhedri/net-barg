@@ -54,5 +54,28 @@ var swiper2 = new Swiper(".gallery", {
         swiper: swiper,
     },
 });
+var tabs = new Swiper(".tabs", {
+    loop: true,
+    autoplay:true,
+    slidesPerView: 7,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 // aos
 AOS.init();
+
+// tabs
+
+var portfolio = $('#portfolio-container').isotope({
+    originLeft: false
+});
+$('#portfolio-filter > div').on('click', function () {
+    $("#portfolio-filter > div").removeClass('active');
+    $(this).addClass('active');
+    portfolio.isotope({
+        filter: $(this).data('filter')
+    });
+});
