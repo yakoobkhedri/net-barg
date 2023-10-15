@@ -996,6 +996,27 @@ input[type='number'],
     .sidebar-list ul{
        display: none!important;
     }
+    #mobileMenu{
+     overflow-y: auto;
+    }
+    #mobileMenu ul{
+        position: static!important;
+        background-color: transparent;
+        transition: all .4s;
+        max-height: 0;
+        display: block!important;
+        overflow: hidden;
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
+    #mobileMenu ul.active{
+        max-height: 1000px;
+        padding-top: 1rem!important;
+        padding-bottom: 1rem!important;
+    }
+    #mobileMenu ul li:last-child{
+        border-bottom: 0!important;
+    }
 }
 
 @media only screen and (max-width:992px) {

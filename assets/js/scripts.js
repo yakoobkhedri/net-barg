@@ -1,6 +1,7 @@
 // mobile menu
 
 let mobileMenu=document.getElementById('mobileMenu');
+let mobileMenuLi=Array.from(document.querySelectorAll('#mobileMenu > li.drop'))
 let hamIcon=document.getElementById('hamIcon');
 let overlay=document.getElementById('overlay');
 
@@ -12,7 +13,11 @@ overlay.addEventListener('click',function () {
     overlay.classList.remove('active');
     mobileMenu.classList.remove('active');
 })
-
+mobileMenuLi.forEach((item)=>{
+    item.addEventListener('click',function () {
+        item.querySelector('ul').classList.toggle('active');
+    })
+})
 // swiper
 var banner = new Swiper(".banner", {
     loop: true,
