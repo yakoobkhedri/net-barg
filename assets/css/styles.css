@@ -922,7 +922,9 @@ input[type='number'],
    color: rgb(1, 154, 1)!important;
  }
 /* header */
-
+header img[alt="logo"]{
+    width: 105px;
+}
 /* banner */
 .sidebar-list .item svg,.sidebar-list .item path,.sidebar-list .item circle,.sidebar-list .item rect{
     color: gray!important;
