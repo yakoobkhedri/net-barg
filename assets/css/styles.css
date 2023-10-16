@@ -19,7 +19,9 @@ body {
     overflow-x: hidden;
     background-color: #f5f5f5;
 }
-
+section{
+    overflow: hidden;
+}
 body.pannel {
     overflow-x: visible;
 }
